@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* start header */
+
 header {
     height: 3rem;
     background-color: black;
@@ -18,7 +21,8 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    background-color: rgb(88, 148, 129);
 }
 
 #facebook,
@@ -30,13 +34,50 @@ header {
 }
 
 #main-title {
-    /* margin-top: 1rem;
-    position: absolute; */
-    color: white;
-    font-family: 'Great Vibes', cursive;
-    font-size: 1rem;
+    margin-top: .5rem;
+    height: 2rem;
+    width: 2rem;
 }
+
+
+/* end header */
+
+
+/* start main img */
 
 #main-img {
     width: 100%;
+}
+
+
+/* end main img */
+
+
+/* start our story */
+
+#about-us-section {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#p-of-our-story,
+#title-of-our-story {
+    margin-top: .5rem;
+    margin-left: .2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+#ul-of-our-story {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#our-story {
+    color: rgb(88, 148, 129);
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
 }
