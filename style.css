@@ -40,6 +40,17 @@ header {
     width: 2rem;
 }
 
+#face-btn,
+#insta-btn,
+#twitter-btn {
+    background-color: black;
+    border: 0px;
+}
+
+.face-ch {
+    background-color: rgb(88, 148, 129) !important;
+}
+
 
 /* end header */
 
