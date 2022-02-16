@@ -7,12 +7,16 @@
 
 ## Description  :pencil: 
 Our website provides :
-* Live photo of the day by nasa website
-* Live video of the day by nasa website
-* Thousands of all styles of images
+* Live display of latest images and videos taken by Nasa with clear and informative discription 
+* Pick form thousands of picture form a various type of categories
+* we showcase a simple easy to navigate website that will garentee you a smooth expeiance 
+
 
 ## User Stories :flying_saucer:
-* The user can see all types of images
+* The user can see the most fresh photos out of the Nasa photographers
+
+* View lots of diffrent types and kinds of pictures in the category section 
+
 
 ## Live link :rocket:
 ### [Click here](https://gsg-g11.github.io/MI-api-team/)
