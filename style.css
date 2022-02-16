@@ -104,6 +104,10 @@ hr {
     color: rgb(88, 148, 129);
     text-decoration: underline;
 }
+.category button:focus{
+    color: rgb(88, 148, 129);
+    text-decoration: underline;
+} 
 
 .imgs-container {
     display: flex;
@@ -177,7 +181,6 @@ hr {
 .footer-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     min-height: 180px;
     margin-bottom: 50px;
@@ -224,8 +227,8 @@ hr {
 }
 
 .links li:hover,
-.follow:hover {
-    color: grey;
+.follow li:hover {
+    color: #384b45;
     cursor: pointer;
 }
 
@@ -274,6 +277,10 @@ hr {
         height: 600px;
     }
     /* end main img */
+
+    .category button{
+        font-size: 1.5rem;
+    }
     /* start about us */
     #description-result {
         align-items: flex-start;
@@ -289,6 +296,16 @@ hr {
         margin-left: 1rem;
     }
     /* end about us */
+    /* start box image */
+    #api-img{
+        width: 250px;
+    }
+    #api-img:hover{
+        width: 300px;
+    }
+
+    /* end box image */
+    /* footer */
     .footer {
         flex-direction: row;
         justify-content: space-around;
@@ -301,13 +318,14 @@ hr {
     .footer-item h2 {
         font-size: 1.4rem;
     }
+    
     .contact p {
         font-size: 0.8rem;
         font-weight: bold;
         margin-bottom: 0px;
     }
     .about p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .mail {
         font-size: 1rem;
@@ -330,6 +348,10 @@ hr {
         font-size: 3rem;
     }
     /* end header */
+
+    .category button{
+        font-size: 2rem;
+    }
     /* start about us */
     #description-result {
         align-items: flex-start;
@@ -344,6 +366,17 @@ hr {
         font-size: 2rem;
     }
     /* end about us */
+
+    /* start box image */
+    #api-img{
+        width: 400px;
+    }
+    #api-img:hover{
+        width: 450px;
+    }
+
+    /* end box image */
+
     /* footer 4k */
     .footer {
         flex-direction: row;
@@ -356,7 +389,7 @@ hr {
     }
     .footer-item h2,
     h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .contact p {
         font-size: 1.5rem;
@@ -364,12 +397,12 @@ hr {
         margin-bottom: 0px;
     }
     .about p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .mail {
         font-size: 1rem;
     }
     .footer li {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
