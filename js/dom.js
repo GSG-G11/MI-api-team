@@ -3,6 +3,7 @@ const header = document.getElementById("main-header");
 const faceBtn = document.querySelector("#face-btn");
 const instaBtn = document.querySelector("#insta-btn");
 const twitterBtn = document.querySelector("#twitter-btn");
+const imgAndVideoDiv = document.querySelector("#main-img-div");
 
 const imageContainer = document.querySelector("#imgs-container");
 
@@ -34,3 +35,15 @@ const LoopImages = (data) => {
         createBoxImg(element);
     });
 };
+
+const videoAndImg = ((data) => {
+    if (data.media_type === "image") {
+        mainImg.src = data.hdurl;
+    } else {
+        mainImg.style.display = "none";
+        const vid = document.createElement("iframe");
+        vid.setAttribute("id", "videos-style")
+        imgAndVideoDiv.appendChild(vid);
+        vid.src = data.url;
+    }
+})
