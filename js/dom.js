@@ -60,7 +60,6 @@ const videoAndImg = ((data) => {
         imgMain.src = data.hdurl;
     } else {
         creatTitleAndDescription(data);
-        mainImg.style.display = "none";
         const vid = document.createElement("iframe");
         vid.setAttribute("id", "videos-style")
         imgAndVideoDiv.appendChild(vid);
