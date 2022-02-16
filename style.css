@@ -62,12 +62,14 @@ header {
 #main-img {
     width: 100%;
 }
-hr{
+
+hr {
     margin-top: 5rem;
     height: 5px;
     background-color: rgb(88, 148, 129);
 }
-.hr2{
+
+.hr2 {
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -111,6 +113,9 @@ hr{
 }
 
 #img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -120,36 +125,36 @@ hr{
 #api-img {
     width: 200px;
     border-radius: 10px;
+    transition: all 1s;
 }
 
 #api-img:hover {
+    width: 250px;
+    opacity: .7;
+}
 
+#api-img-category {
+    max-width: 200px;
 }
 
 
 /* start our story */
 
-#about-us-section {
+#description-result {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#p-of-our-story {
+#description-of-img-or-video {
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     font-family: "Roboto Slab", serif;
     font-size: 1rem;
 }
 
-#ul-of-our-story {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    font-size: 0.8rem;
-}
-
-#our-story {
+#title-of-img-or-video {
     color: rgb(88, 148, 129);
     font-family: "Roboto Slab", serif;
     width: 100%;
@@ -162,10 +167,10 @@ hr{
 
 .footer {
     padding: 20px;
-    background-color: rgb(88, 148, 129); 
+    background-color: rgb(88, 148, 129);
     display: flex;
     flex-direction: column;
-    border: 6px solid rgb(75, 105, 96) ;
+    border: 6px solid rgb(75, 105, 96);
     border-top: none;
 }
 
@@ -228,21 +233,18 @@ hr{
     text-align: center;
 }
 
-
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     .footer {
         display: flex;
-   
-      
     }
-    .footer-item{
+    .footer-item {
         width: 100%;
     }
-    .footer h2{
+    .footer h2 {
         width: 100%;
         font-size: 1.3rem;
     }
-    .contact p { 
+    .contact p {
         font-size: 1rem;
     }
 }
@@ -273,23 +275,18 @@ hr{
     }
     /* end main img */
     /* start about us */
-    #about-us-section {
+    #description-result {
         align-items: flex-start;
         margin-left: 1rem;
     }
-    #our-story {
+    #title-of-img-or-video {
         color: rgb(88, 148, 129);
-        font-size: 1.3rem;
-        width: 7rem;
+        font-size: 1.5rem;
         height: 2rem;
     }
-    #p-of-our-story {
+    #description-of-img-or-video {
         font-size: 1.5rem;
         margin-left: 1rem;
-    }
-    #ul-of-our-story {
-        margin-left: 3.2rem;
-        font-size: 1.5rem;
     }
     /* end about us */
     .footer {
@@ -334,25 +331,19 @@ hr{
     }
     /* end header */
     /* start about us */
-    #about-us-section {
+    #description-result {
         align-items: flex-start;
         margin-left: 2rem;
     }
-    #our-story {
+    #title-of-img-or-video {
         color: rgb(88, 148, 129);
         font-size: 2.5rem;
-        width: 14rem;
         height: 4rem;
     }
-    #p-of-our-story {
-        font-size: 2rem;
-    }
-    #ul-of-our-story {
-        margin-left: 4rem;
+    #description-of-img-or-video {
         font-size: 2rem;
     }
     /* end about us */
-
     /* footer 4k */
     .footer {
         flex-direction: row;
@@ -363,7 +354,8 @@ hr{
         width: 20%;
         margin-bottom: 0px;
     }
-    .footer-item h2 ,h3 {
+    .footer-item h2,
+    h3 {
         font-size: 3rem;
     }
     .contact p {
@@ -377,7 +369,7 @@ hr{
     .mail {
         font-size: 1rem;
     }
-    .footer li{
-        font-size: 2rem ;
+    .footer li {
+        font-size: 2rem;
     }
 }
