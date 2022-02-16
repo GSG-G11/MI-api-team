@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    max-width: 100%;
 }
 
 
@@ -45,6 +46,7 @@ header {
 #twitter-btn {
     background-color: black;
     border: 0px;
+    cursor: pointer;
 }
 
 .face-ch {
@@ -74,16 +76,17 @@ header {
     align-items: center;
 }
 
-#p-of-our-story,
-#title-of-our-story {
+#p-of-our-story {
     margin-top: .5rem;
-    margin-left: .2rem;
+    margin-left: .5rem;
     font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
 }
 
 #ul-of-our-story {
     margin-top: 1rem;
     margin-left: 2rem;
+    font-size: .8rem;
 }
 
 #our-story {
@@ -164,6 +167,50 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
+    /* start header */
+    header {
+        height: 4rem;
+    }
+    #main-title {
+        height: 3rem;
+        width: 3rem;
+    }
+    #facebook,
+    #insta,
+    #twitter,
+    .ri-more-fill {
+        font-size: 1.5rem;
+    }
+    /* end header */
+    /* start main img */
+    #main-img-div {
+        box-sizing: border-box;
+        height: 100vh;
+    }
+    #main-img {
+        height: 100%;
+    }
+    /* end main img */
+    /* start about us */
+    #about-us-section {
+        align-items: flex-start;
+        margin-left: 1rem;
+    }
+    #our-story {
+        color: rgb(88, 148, 129);
+        font-size: 1.3rem;
+        width: 7rem;
+        height: 2rem;
+    }
+    #p-of-our-story {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    #ul-of-our-story {
+        margin-left: 3.2rem;
+        font-size: 1.5rem;
+    }
+    /* end about us */
     .footer {
         flex-direction: row;
         justify-content: space-around;
@@ -187,4 +234,71 @@ header {
     .mail {
         font-size: 1rem;
     }
+}
+
+
+/* @media (min-width: 1024px) and (max-width: 1440px) {
+    header {
+        height: 6rem;
+    }
+    #main-title {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    #facebook,
+    #insta,
+    #twitter,
+    .ri-more-fill {
+        font-size: 2rem;
+    }
+    #our-story {
+        color: rgb(88, 148, 129);
+        font-size: 1.3rem;
+        width: 7rem;
+        height: 2rem;
+    }
+    #p-of-our-story {
+        font-size: 1.5rem;
+    }
+    #ul-of-our-story {
+        margin-left: 3rem;
+        font-size: 1.3rem;
+    }
+} */
+
+@media (min-width: 1441px) and (max-width: 2561px) {
+    /* start header */
+    header {
+        height: 7rem;
+    }
+    #main-title {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    #facebook,
+    #insta,
+    #twitter,
+    .ri-more-fill {
+        font-size: 3rem;
+    }
+    /* end header */
+    /* start about us */
+    #about-us-section {
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+    #our-story {
+        color: rgb(88, 148, 129);
+        font-size: 2.5rem;
+        width: 14rem;
+        height: 4rem;
+    }
+    #p-of-our-story {
+        font-size: 2rem;
+    }
+    #ul-of-our-story {
+        margin-left: 4rem;
+        font-size: 2rem;
+    }
+    /* end about us */
 }
