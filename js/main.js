@@ -1,4 +1,3 @@
-// When the user scrolls the page, execute myFunction
 const sticky = header.offsetTop;
 window.onscroll = (() => {
     if (window.pageYOffset > sticky) {
