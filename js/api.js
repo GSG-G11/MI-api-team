@@ -1,14 +1,22 @@
+// Intilize the date of the day
 let time = new Date();
 let year = time.getFullYear();
 let month = time.getMonth() + 1;
 let day = time.getDate();
 let value = "galaxy";
 
+// This function will handle the api request 
 const req = ((method, url, cb) => {
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            cb(JSON.parse(xhr.responseText));
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                cb(JSON.parse(xhr.responseText));
+            } else if (xhr.status === 404) {
+                console.log("HTTP error 404 :page not found ");
+            } else if (xhr.status === 500) {
+                console.log("HTTP error 500 : Internal Server Error");
+            }
         }
     };
     xhr.open(method, url, true);

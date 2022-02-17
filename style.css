@@ -91,7 +91,10 @@ hr {
     align-items: center;
 }
 
-.category button {
+#galaxy,
+#LifeStyle,
+#Food,
+#Wedding {
     background: none;
     border: none;
     font-size: 1.1rem;
@@ -100,14 +103,50 @@ hr {
     transition: all 0.3s ease-in-out;
 }
 
+#input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+#input-box {
+    width: 14rem;
+    height: 2rem;
+    border-radius: 25px;
+    padding-left: 1rem;
+}
+
+#input-box:focus {
+    outline: none;
+}
+
+#Search {
+    background-color: rgb(88, 148, 129);
+    color: white;
+    border: 0px solid;
+    margin-left: 1rem;
+    width: 4rem;
+    height: 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#Search:hover {
+    background-color: rgb(25, 88, 68);
+    text-decoration: none;
+}
+
 .category button:hover {
     color: rgb(88, 148, 129);
     text-decoration: underline;
 }
-.category button:focus{
+
+.category button:focus {
     color: rgb(88, 148, 129);
     text-decoration: underline;
-} 
+}
 
 .imgs-container {
     display: flex;
@@ -277,9 +316,18 @@ hr {
         height: 600px;
     }
     /* end main img */
-
-    .category button{
+    .category button {
         font-size: 1.5rem;
+    }
+    #input-box {
+        width: 25rem;
+        height: 3rem;
+        border-radius: 50px;
+    }
+    #Search {
+        width: 8rem;
+        height: 3rem;
+        border-radius: 40px;
     }
     /* start about us */
     #description-result {
@@ -297,13 +345,12 @@ hr {
     }
     /* end about us */
     /* start box image */
-    #api-img{
+    #api-img {
         width: 250px;
     }
-    #api-img:hover{
+    #api-img:hover {
         width: 300px;
     }
-
     /* end box image */
     /* footer */
     .footer {
@@ -318,7 +365,6 @@ hr {
     .footer-item h2 {
         font-size: 1.4rem;
     }
-    
     .contact p {
         font-size: 0.8rem;
         font-weight: bold;
@@ -348,8 +394,7 @@ hr {
         font-size: 3rem;
     }
     /* end header */
-
-    .category button{
+    .category button {
         font-size: 2rem;
     }
     /* start about us */
@@ -366,17 +411,24 @@ hr {
         font-size: 2rem;
     }
     /* end about us */
-
     /* start box image */
-    #api-img{
+    #api-img {
         width: 400px;
     }
-    #api-img:hover{
+    #api-img:hover {
         width: 450px;
     }
-
     /* end box image */
-
+    #input-box {
+        width: 35rem;
+        height: 3rem;
+        border-radius: 50px;
+    }
+    #Search {
+        width: 8rem;
+        height: 3rem;
+        border-radius: 40px;
+    }
     /* footer 4k */
     .footer {
         flex-direction: row;
