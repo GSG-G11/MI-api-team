@@ -1,3 +1,5 @@
+// this func will let the header sticy and change the color
+
 const sticky = header.offsetTop;
 window.onscroll = (() => {
     if (window.pageYOffset > sticky) {
